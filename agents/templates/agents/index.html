@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row mt-5">
+      <div class="col">
+        <select class="form-select" aria-label="Default select example">
+          <option value="0" selected>Choose Country</option>
+        </select>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control live-search" placeholder="Port" aria-label="Last name">
+      </div>
+      <div class="col">
+        <button id="btn" type="button" class="btn btn-primary">Get Agents</button>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-8">
+        <ol class="list-group list-group-numbered">
+        </ol>
+      </div>
+    </div>
+
+{% endblock %}
+
